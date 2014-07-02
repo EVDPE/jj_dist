@@ -259,10 +259,11 @@
   }
 }
 
+/* rodapé */
 footer#rodape {
   clear: both;
   border-top: 15px solid #c0e2d6;
-  margin-top: 600px;    
+  margin-top: 750px;    
   font-family: 'Open Sans', Helvetica, sans-serif;
   background: #80ad90;
   background: -moz-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
@@ -274,8 +275,83 @@ footer#rodape {
 }
 
 footer#rodape p {
-    text-align: center;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #fffdde;
+  border-right: 1px solid rgba(80, 80, 80, 0.12);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 900;
+  color: #fffdde;
+  letter-spacing: 1px;
+  background: url('../images/bg.png');
+  animation-name: mymove;
+  animation-duration: 5s;
 
 }
+
+@-webkit-keyframe mymove{
+    from {left:0px;}
+    to {left:200px;}
+}
+
+footer#rodape span:hover{   
+    
+ letter-spacing: 3px;  
+ color: #c0e2d6;
+ transition: .7s; 
+}
+
+h1{
+/*animation-duration*/
+-webkit-animation-duration:5s;
+   -moz-animation-duration:5s;
+    -ms-animation-duration:5s;
+     -o-animation-duration:5s;
+        animation-duration:5s;
+/*animation-name*/
+-webkit-animation-name:slidein;
+   -moz-animation-name:slidein;
+    -ms-animation-name:slidein;
+     -o-animation-name:slidein;
+        animation-name:slidein;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-direction*/
+-webkit-animation-direction:alternate;
+   -moz-animation-direction:alternate;
+    -ms-animation-direction:alternate;
+     -o-animation-direction:alternate;
+        animation-direction:alternate;
+}
+@keyframes slidein{
+from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes slidein{
+from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* fim rodapé */
 
 
