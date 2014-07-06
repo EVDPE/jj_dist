@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-html { height: 100% }
-body { height: 100%; margin: 0; padding: 0 }
+html { height: 100%; width: 100%;}
+body { height: 100%; width: 100%; margin: 0; padding: 0 }
 #interface{
     height: 100%;
 }
@@ -34,14 +34,9 @@ body { height: 100%; margin: 0; padding: 0 }
 }
 #cssmenu {
   width: auto;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  background: #80ad90;
-  background: -moz-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #93b9a0), color-stop(100%, #679d7a));
-  background: -webkit-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
-  background: -o-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
-  background: -ms-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
-  background: linear-gradient(to bottom, #93b9a0 0%, #679d7a 100%);  
+  font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #000;
+    height: 8%;
 }
 
 #cssmenu > ul {
@@ -178,7 +173,7 @@ body { height: 100%; margin: 0; padding: 0 }
 }
 @media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
-    background: #80ad90;
+    background: #000;
   }
   #cssmenu > ul {
     display: none;
@@ -268,14 +263,10 @@ body { height: 100%; margin: 0; padding: 0 }
 footer#rodape {
   clear: both;
   border-top: 15px solid #c0e2d6;   
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  background: #80ad90;
-  background: -moz-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #93b9a0), color-stop(100%, #679d7a));
-  background: -webkit-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
-  background: -o-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
-  background: -ms-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
-  background: linear-gradient(to bottom, #93b9a0 0%, #679d7a 100%);   
+  font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #000;
+    height: 10%;
+
 }
 
 footer#rodape p {
@@ -302,7 +293,7 @@ footer#rodape p {
 footer#rodape span:hover{   
     
  letter-spacing: 3px;  
- color: #c0e2d6;
+ color: #ccc;
  transition: .7s; 
 }
 
@@ -378,3 +369,169 @@ p.quem-somos{
     width: 300px; height: 300px; border-radius: 150px; -webkit-border-radius: 150px; -moz-border-radius: 150px;
 }
 /* fim como chegar*/
+/* pagina inicial */
+
+.hero{
+	border-bottom: 1px solid #CDCDCD;
+	position: relative;
+	width: 100%;
+	top: 0;
+	z-index: -1;
+
+}
+
+@-webkit-keyframes colorshift {
+	0%   { color: #ff4701; }
+	25%  { color: #a568e9; }
+	50%  { color: #47edfb; }
+	75%  { color: #1cd89e; }
+	100%  { color: #ff4701; }
+}
+@-moz-keyframes colorshift {
+	0%   { color: #ff4701; }
+	25%  { color: #a568e9; }
+	50%  { color: #47edfb; }
+	75%  { color: #1cd89e; }
+	100%  { color: #ff4701; }
+}
+@-ms-keyframes colorshift {
+	0%   { color: #ff4701; }
+	25%  { color: #a568e9; }
+	50%  { color: #47edfb; }
+	75%  { color: #1cd89e; }
+	100%  { color: #ff4701; }
+}
+@-o-keyframes colorshift {
+	0%   { color: #ff4701; }
+	25%  { color: #a568e9; }
+	50%  { color: #47edfb; }
+	75%  { color: #1cd89e; }
+	100%  { color: #ff4701; }
+}
+
+@-webkit-keyframes bgcolorshift {
+	0%   { background-color: #ff4701; }
+	25%  { background-color: #a568e9; }
+	50%  { background-color: #47edfb; }
+	75%  { background-color: #1cd89e; }
+	100%  { background-color: #ff4701; }
+}
+@-moz-keyframes bgcolorshift {
+	0%   { background-color: #ff4701; }
+	25%  { background-color: #a568e9; }
+	50%  { background-color: #47edfb; }
+	75%  { background-color: #1cd89e; }
+	100%  { background-color: #ff4701; }
+}
+@-ms-keyframes bgcolorshift {
+	0%   { background-color: #ff4701; }
+	25%  { background-color: #a568e9; }
+	50%  { background-color: #47edfb; }
+	75%  { background-color: #1cd89e; }
+	100%  { background-color: #ff4701; }
+}
+@-o-keyframes bgcolorshift {
+	0%   { background-color: #ff4701; }
+	25%  { background-color: #a568e9; }
+	50%  { background-color: #47edfb; }
+	75%  { background-color: #1cd89e; }
+	100%  { background-color: #ff4701; }
+}
+@font-face {
+    font-family: Grandma;
+    src: url('../font/grandmatelevision.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.titulo-presentacion{
+	font-size: 120px;
+	line-height: 139px;
+	font-family: Grandma;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: uppercase;
+	color: #50ecf8;
+	-webkit-animation: colorshift 30s infinite;
+	-moz-animation:    colorshift 30s infinite;
+ 	-ms-animation:     colorshift 30s infinite;
+ 	-o-animation:      colorshift 30s infinite;
+	margin:40px 0  30px 0;
+}
+.hero-antler{
+	width: 43px;
+	height: 45px;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	background-image: url('img/antler.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-color: #50ecf8;        
+	-webkit-animation: bgcolorshift 30s infinite;
+	-moz-animation:    bgcolorshift 30s infinite;
+ 	-ms-animation:     bgcolorshift 30s infinite;
+ 	-o-animation:      bgcolorshift 30s infinite;
+}
+#home{
+    margin: -20px 0px -10px 0px;
+    max-width: 1920px;
+    min-height: 550px;
+    min-width:500px;
+    position: relative;
+    width: 100%;
+    height: 84%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+.header-10-sub .hero-unit.hero-unit-bordered h1 {
+  font-size: 46px;
+  font-weight: normal;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border: 8px solid white;
+  display: inline-block;
+  margin: 0;
+  padding: 30px 40px;
+}
+@media (max-width: 480px) {
+  .header-10-sub .hero-unit.hero-unit-bordered h1 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #ffffff;
+    font-weight: 500;
+  }
+}
+@media (max-width: 480px) {
+  .header-10-sub.v-center > div {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+}
+#section1{
+    margin: -20px 0px -10px 0px;
+    max-width: 1920px;
+    min-height: 550px;
+    min-width:500px;
+    position: relative;
+    width: 100%;
+    height: 84%;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+#section1 h1{
+    padding-top: 19%;
+}
