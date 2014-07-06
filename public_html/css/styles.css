@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+#interface{
+    height: 100%;
+}
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -42,7 +47,7 @@
 #cssmenu > ul {
   background: url('../images/bg.png');
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
-  left: 500px;
+  margin-left: 22%;
 }
 
 #cssmenu > ul > li {
@@ -112,7 +117,7 @@
   height: 0;
   border: 5px solid transparent;
   border-right-color: #ccdbab;
-  top: 11px;
+  top: -10px;
   left: -4px;
 }
 #cssmenu > ul > li > ul {
@@ -262,8 +267,7 @@
 /* rodapé */
 footer#rodape {
   clear: both;
-  border-top: 15px solid #c0e2d6;
-  margin-top: 750px;    
+  border-top: 15px solid #c0e2d6;   
   font-family: 'Open Sans', Helvetica, sans-serif;
   background: #80ad90;
   background: -moz-linear-gradient(top, #93b9a0 0%, #679d7a 100%);
@@ -302,32 +306,6 @@ footer#rodape span:hover{
  transition: .7s; 
 }
 
-h1{
-/*animation-duration*/
--webkit-animation-duration:5s;
-   -moz-animation-duration:5s;
-    -ms-animation-duration:5s;
-     -o-animation-duration:5s;
-        animation-duration:5s;
-/*animation-name*/
--webkit-animation-name:slidein;
-   -moz-animation-name:slidein;
-    -ms-animation-name:slidein;
-     -o-animation-name:slidein;
-        animation-name:slidein;
-/*animation-iteration-count*/
--webkit-animation-iteration-count:infinite;
-   -moz-animation-iteration-count:infinite;
-    -ms-animation-iteration-count:infinite;
-     -o-animation-iteration-count:infinite;
-        animation-iteration-count:infinite;
-/*animation-direction*/
--webkit-animation-direction:alternate;
-   -moz-animation-direction:alternate;
-    -ms-animation-direction:alternate;
-     -o-animation-direction:alternate;
-        animation-direction:alternate;
-}
 @keyframes slidein{
 from {
     margin-left: 100%;
@@ -353,5 +331,50 @@ from {
 }
 
 /* fim rodapé */
+/* quem somos*/
+#quem-somos{
+    height: 79%;
+}
 
+p.quem-somos{
+  margin-top: 50px;
+  margin-left: 220px;
+  padding: 10px 30px 30px 30px;
+  text-align: justify;  
+  line-height: 2;
+}
 
+#jj-logo-quem-somos{
+  margin-bottom: 20px;
+   margin-top: 85px;
+   margin-left: 70px;
+   float:right;
+   border: 1px solid #ccc;
+   box-shadow: 1px 1px 3px 3px #CCC;  
+}
+#jj-logo-quem-somos figcaption{
+    display: none;
+}
+
+#img-quem-somos{
+    padding-bottom: 50px;
+    margin-right: 50px;
+}
+/* fim quem somos*/
+/* como chegar */
+.legends{
+ padding-bottom: 5px;   
+ box-shadow: -1px 1px 1px #CCC;
+ 
+}
+#results{
+ margin-left: 25%;
+ border: 1px solid black;
+ width: 300px; height: 300px; border-radius: 150px; -webkit-border-radius: 150px; -moz-border-radius: 150px;
+}
+#result{
+    width: 300px;
+    background-color: red;
+    width: 300px; height: 300px; border-radius: 150px; -webkit-border-radius: 150px; -moz-border-radius: 150px;
+}
+/* fim como chegar*/
